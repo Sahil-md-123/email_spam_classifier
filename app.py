@@ -5,7 +5,7 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
 # Load the saved model and vectorizer
-with open('nb_model.pkl', 'rb') as model_file:
+with open('spam_classifier.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
 with open('vectorizer.pkl', 'rb') as vec_file:
